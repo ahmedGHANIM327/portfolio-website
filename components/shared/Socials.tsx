@@ -3,15 +3,15 @@ import Link from "next/link";
 
 const socialIcons = [
     {
-        path: '/',
+        path: 'https://github.com/ahmedGHANIM327',
         name: <RiGithubFill />
     },
     {
-        path: '/',
+        path: 'https://www.linkedin.com/in/ahmed-ghanim-11b4a31a5/',
         name: <RiLinkedinFill />
     },
     {
-        path: '/',
+        path: 'mailto:email@example.com',
         name: <RiMailFill />
     }
 ]

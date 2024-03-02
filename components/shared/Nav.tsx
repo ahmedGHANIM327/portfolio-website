@@ -41,10 +41,12 @@ const Nav:FC<{containerStyles:string, linkStyles:string, underlineStyles:string}
                 </Link>
             }
         )}
-        <Button className='gap-x-2'>
-            Download CV
-            <RiDownload2Fill />
-        </Button>
+        <Link href={'https://media.graphassets.com/dY4GNNASYyVrBMpRqk10'}>
+            <Button className='gap-x-2'>
+                Download CV
+                <RiDownload2Fill />
+            </Button>
+        </Link>
     </nav>
   )
 }

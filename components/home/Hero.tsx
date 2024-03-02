@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { Download, Send } from "lucide-react";
+import { ArrowUpRight, Send } from "lucide-react";
 import DevImg from "../shared/DevImg";
 import Socials from "../shared/Socials";
 import Badge from "../shared/Badge";
@@ -8,7 +8,7 @@ import { RiBriefcase4Fill, RiTodoFill } from "react-icons/ri";
 
 const Hero = () => {
   return (
-    <section className="pt-8 xl:pt-12 min-h-[90vh]">
+    <section className="pt-8 xl:pt-16 min-h-[90vh]">
         <div className="container mx-auto">
             <div className="flex xl:justify-between justify-center gap-x-8 flex-wrap">
                 <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-start mb-6 xl:mb-0">
@@ -26,7 +26,7 @@ const Hero = () => {
                         <Button size={"lg"} className="gap-x-3">Contact me <Send size={18}/></Button>
                     </Link>
                     <Link href={'/projects'}>
-                        <Button size={"lg"} variant="outline" className="gap-x-3">My projects <Download size={18}/></Button>
+                        <Button size={"lg"} variant="outline" className="gap-x-3">My projects <ArrowUpRight size={18}/></Button>
                     </Link>
                   </div>
                   <Socials />
