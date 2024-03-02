@@ -2,6 +2,8 @@ import Link from 'next/link';
 import React, { FC } from 'react'
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
+import { Button } from '../ui/button';
+import { RiDownload2Fill } from 'react-icons/ri';
 
 const links = [
     {
@@ -39,6 +41,10 @@ const Nav:FC<{containerStyles:string, linkStyles:string, underlineStyles:string}
                 </Link>
             }
         )}
+        <Button className='gap-x-2'>
+            Download CV
+            <RiDownload2Fill />
+        </Button>
     </nav>
   )
 }

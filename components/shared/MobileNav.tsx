@@ -3,6 +3,7 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from '../ui/sheet'
 import { AlignRight } from 'lucide-react'
 import Logo from './Logo'
 import Nav from './Nav'
+import Socials from './Socials'
 
 const MobileNav = () => {
   return (
@@ -19,6 +20,7 @@ const MobileNav = () => {
                       linkStyles='text-2xl relative hover:text-primary transition-all'
                       underlineStyles='absolute left-0 top-full h-[2px] w-full bg-primary'
                     />
+                    <Socials />
                 </div>
             </div>
         </SheetContent>
