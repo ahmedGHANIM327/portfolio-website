@@ -8,7 +8,7 @@ import { RiBriefcase4Fill, RiTodoFill } from "react-icons/ri";
 
 const Hero = () => {
   return (
-    <section className="pt-8 xl:pt-16 min-h-[90vh]">
+    <section className="pt-8 xl:pt-16">
         <div className="container mx-auto">
             <div className="flex xl:justify-between justify-center gap-x-8 flex-wrap">
                 <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-start mb-6 xl:mb-0">

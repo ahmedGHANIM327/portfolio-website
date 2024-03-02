@@ -69,3 +69,13 @@ h1 {
 .badge {
   @apply z-10 h-[68px] xl:p-4 p-1 rounded-[10px] flex items-center xl:gap-x-4 gap-x-2 w-fit xl:w-[200px] bg-white dark:backdrop-blur-[44px] shadow-2xl hidden xl:flex;
 }
+
+.section-title 
+{
+  @apply text-center text-4xl font-bold relative mx-auto flex items-center justify-center gap-x-3;
+}
+
+.section-title>span
+{
+  @apply xl:text-8xl text-6xl font-bold absolute w-max text-center left-auto opacity-10;
+}
