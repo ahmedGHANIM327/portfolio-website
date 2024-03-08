@@ -79,3 +79,7 @@ h1 {
 {
   @apply xl:text-8xl text-6xl font-bold absolute w-max text-center left-auto opacity-10;
 }
+
+.data-[state="active"]:bg-background[data-state=active]{
+  @apply !bg-secondary;
+}
