@@ -12,6 +12,17 @@ export const experiences: Experience[] =
 [
     {
         "id":0,
+        "company":"Repam",
+        "location":"Lyon , France",
+        "date": "08/2023 - Now",
+        "poste": "Full Stack Developer",
+        "description": [],
+        "skills":[
+            "NodeJS","React","NextJS","NestJS","ExpressJS","MongoDB","PostgreSQL"
+        ]
+    },
+    {
+        "id":1,
         "company":"CAPGEMINI",
         "location":"Toulouse , France",
         "date": "09/2021 - 08/2023",
@@ -28,7 +39,7 @@ export const experiences: Experience[] =
         ]
     },
     {
-        "id":1,
+        "id":2,
         "company":"Capitole Formation",
         "location":"Toulouse , France",
         "date": "06/2021 - 08/2021",
@@ -42,7 +53,7 @@ export const experiences: Experience[] =
         ]
     },
     {
-        "id":2,
+        "id":3,
         "company":"N7 Consulting",
         "location":"Toulouse , France",
         "date": "03/2021 - 06/2021",

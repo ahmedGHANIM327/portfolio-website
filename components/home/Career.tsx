@@ -9,11 +9,11 @@ const Career = () => {
             <Tabs defaultValue="experiences" className="w-full flex flex-col items-center">
                 <TabsList className="w-full max-w-[800px] bg-accent xl:py-6 py-4 text-foreground mb-4">
                     <TabsTrigger value="experiences" className="gap-x-2 flex justify-center items-center w-1/2 xl:text-lg text-sm data-[state=active]:bg-primary data-[state=active]:text-white">
-                        <Briefcase />
+                        <Briefcase className="hidden md:flex" />
                         Professional Career
                     </TabsTrigger>
                     <TabsTrigger value="education" className="gap-x-2 flex justify-center items-center w-1/2 xl:text-lg text-sm data-[state=active]:bg-primary data-[state=active]:text-white">
-                        <GraduationCap />
+                        <GraduationCap className="hidden md:flex"/>
                         Academic Career
                     </TabsTrigger>
                 </TabsList>
