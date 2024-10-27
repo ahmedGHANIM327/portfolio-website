@@ -1,36 +1,44 @@
-# Stage 1: Build the application
-FROM node:20-alpine AS builder
+FROM node:20-alpine AS base
 
-# Set the working directory
+FROM base AS deps
+
+RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+COPY package.json ./
 
-# Install dependencies
-RUN npm install --legacy-peer-deps
+RUN npm update && npm install
 
-# Copy the rest of the application code
+# If you want yarn update and  install uncomment the bellow
+
+# RUN yarn install &&  yarn upgrade
+
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Build the Next.js app
 RUN npm run build
 
-# Stage 2: Create the production image
-FROM node:20-alpine AS runner
-
-# Set the working directory
+FROM base AS runner
 WORKDIR /app
 
-# Install only production dependencies
-COPY --from=builder /app/package*.json ./
-RUN npm install --production --legacy-peer-deps
+ENV NODE_ENV production
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
 
-# Copy built assets from the builder stage
-COPY --from=builder /app/ ./
+COPY --from=builder /app/public ./public
 
-# Expose the application port
+RUN mkdir .next
+RUN chown nextjs:nodejs .next
+
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
+
 EXPOSE 3000
 
-# Start the application
-CMD ["npm", "start"]
+ENV PORT 3000
+
+CMD ["node", "server.js"]
