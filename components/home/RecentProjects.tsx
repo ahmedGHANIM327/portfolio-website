@@ -18,9 +18,10 @@ const RecentProjects = () => {
         <div className="container mx-auto flex flex-wrap gap-y-4 xl:gap-x-[2%] items-center ">
             <div className="xl:w-[29%] mx-auto xl:mx-0 flex flex-col items-center xl:items-start">
                 <h2 className="text-4xl font-bold relative mb-4">Latest Projects</h2>
-                <p className="xl:text-lg text-base font-light text-justify text-muted-foreground mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing 
-                    elit. Nulla quaerat ea numquam perferendis magnam 
-                    culpa saepe eaque.</p>
+                <p className="xl:text-lg text-base font-light text-justify text-muted-foreground mb-4">
+                    Discover the latest additions to my portfolio, showcasing innovative solutions crafted
+                    to enhance user experiences and streamline processes.
+                </p>
                 <Link href='/projects'>
                     <Button size={'lg'} className="mt-2 gap-x-3 mb-4">
                         All Projects
