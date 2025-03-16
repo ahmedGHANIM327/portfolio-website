@@ -5,6 +5,7 @@ import DevImg from "../shared/DevImg";
 import Socials from "../shared/Socials";
 import Badge from "../shared/Badge";
 import { RiBriefcase4Fill, RiTodoFill } from "react-icons/ri";
+import {profile} from "@/data/profile";
 
 const Hero = () => {
   return (
@@ -15,11 +16,7 @@ const Hero = () => {
                   <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Full Stack Developer</div>
                   <h1>Hi, I am Ahmed GHANIM</h1>
                   <p className="xl:text-lg text-base font-light xl:text-justify text-muted-foreground mb-6">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit. Duis neque nisi, ullamcorper 
-                    a magna non, vestibulum dictum tellus. Nunc non dapibus 
-                    velit, eget semper arcu. Nullam at sem vitae diam 
-                    vehicula auctor.
+                      {profile.short_biography}
                   </p>
                   <div className="flex gap-x-4 mb-6 justify-center xl:justify-start">
                     <Link href={'/contact'}>
@@ -32,17 +29,11 @@ const Hero = () => {
                   <Socials />
                 </div>
                 <div className="flex items-center relative">
-                    <Badge 
+                    <Badge
                         cointainerStyles="absolute top-[60px] -left-[50px]"
                         icon={<RiBriefcase4Fill />}
-                        endCountNum={3}
+                        endCountNum={4}
                         badgeText="Years Of Experience"
-                    />
-                    <Badge 
-                        cointainerStyles="absolute bottom-[80px] -right-[50px]"
-                        icon={<RiTodoFill />}
-                        endCountNum={15}
-                        badgeText="Completed Project"
                     />
                     <DevImg />
                 </div>

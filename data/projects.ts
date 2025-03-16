@@ -1,54 +1,54 @@
 export type Project = {
     id: number;
-    image: string;
+    images: string[];
     name: string;
     short_description?:string,
     description: string[];
     tools: string[];
     preview:string;
     code:string;
+    order?: number;
 }
 
 export const projects: Project[] = [
     {
         id: 0,
-        image: '/projects/clothing-ecommerce.JPG',
-        name: 'SantePro',
-        short_description:'SantePro is a SaaS platform designed to streamline the management of private practices....',
+        images: [
+            '/projects/shifaelib/shifaelib-agenda.png',
+            '/projects/shifaelib/shifaelib-users.png',
+            '/projects/shifaelib/shifaelib-cabinet-data.png'
+        ],
+        name: 'Shifaelib',
+        short_description:'Shifaelib is an advanced web platform designed to streamline the management of medical cabinets....',
         description: [
-            `SantePro is a SaaS platform designed to streamline the management of private practices. This project leverages
-            a microservices architecture to ensure scalability and maintainability, utilizing NestJS for the backend and RabbitMQ
-            for efficient inter-service communication. The frontend is built with Next.js and styled with Tailwind CSS, 
-            providing a responsive and user-friendly interface.`,
+            `Shifaelib is an advanced web platform designed to streamline the management of medical cabinets, providing a 
+            seamless experience for healthcare professionals. It enables doctors to manage their accounts securely with 
+            NextAuth authentication while offering a dynamic and fully customizable service schema tailored to their 
+            specific needs. Additionally, Shifaelib facilitates comprehensive patient data management, including treatments 
+            and medical history, ensuring efficiency and organization.`,
 
-            `Key features of this platform include an interactive agenda for session organization, detailed patient management, 
-            and robust payment management capabilities. The agenda integrates with popular calendar systems, allowing for seamless 
-            scheduling and rescheduling of appointments. Patient management is enhanced with secure record-keeping and integrated 
-            messaging features, ensuring compliance with data protection regulations.`,
+            `One of its standout features is the intelligent agenda, which optimizes patient session management. This system 
+            allows for effortless scheduling, rescheduling, and tracking of sessions, ensuring a smooth workflow for medical 
+            professionals. The platform’s robust architecture, powered by NestJS, NextJS, PostgreSQL, and Zustand for state 
+            management, guarantees high performance, scalability, and a responsive user experience.`,
 
-            `The payment management system tracks and organizes payments received by the practitioner, generating automated 
-            invoices and supporting various payment methods and currencies. This feature simplifies the billing process, 
-            allowing practitioners to monitor and manage their revenue efficiently. Additionally, service management 
-            capabilities allow for the easy updating and tracking of services offered, helping practices optimize their 
-            offerings based on patient preferences`,
-
-            `For database management, the platform uses PostgreSQL for relational data and MongoDB for unstructured data, 
-            ensuring flexibility and reliability. Continuous integration and deployment pipelines are managed with Jenkins, 
-            enabling efficient CI/CD processes. I also implemented unit tests using Jest, ensuring code quality and reliability 
-            throughout the development process. This project showcases my expertise in building scalable, user-centric solutions 
-            with a focus on performance and security.`
+            `To maintain reliability and automation, Shifaelib integrates Jest for rigorous testing, GitHub Actions for 
+            continuous integration and deployment, and Docker with Portainer for streamlined deployment. Furthermore, 
+            RabbitMQ enables asynchronous email notifications, ensuring timely communication without affecting system 
+            performance. With its powerful tech stack and well-thought-out features, Shifaelib is a complete solution for 
+            modern medical practice management.`,
         ],
         tools: ["NestJS", "NextJS", "PostgreSQL", "MongoDB", "RabbitMQ", "Jenkins", "Jest", "Stripe"],
-        preview : "",
+        preview : "https://app.recette.shifaelib.com",
         code : ""
     },
     {
         id: 1,
-        image: '/projects/clothing-ecommerce.JPG',
-        name: 'Evently',
-        short_description:'Evently is a comprehensive platform designed to revolutionize event organization and attendance...',
+        images: ['/projects/evently/evently-hero.png'],
+        name: 'Events Organization',
+        short_description:'Events Organization is a comprehensive platform designed to revolutionize event organization and attendance...',
         description: [
-            `Evently is a comprehensive platform designed to revolutionize event organization and attendance. 
+            `Events Organization is a comprehensive platform designed to revolutionize event organization and attendance. 
             Leveraging cutting-edge technologies including Next.js, MongoDB, Tailwind CSS, and Stripe, alongside 
             UploadThing for seamless file uploads, Evently offers an intuitive and dynamic solution for creating, 
             sharing, and participating in events.`,
@@ -72,12 +72,12 @@ export const projects: Project[] = [
             Evently provides a comprehensive and user-friendly solution for all your event needs.`
         ],
         tools: ["React", "Nextjs", "MongoDB", "Stripe", "TailwindCSS"],
-        preview : "https://events-organization.vercel.app/",
-        code : "https://github.com/ahmedGHANIM327/Clothing-Ecommerce"
+        preview : "",
+        code : "https://github.com/ahmedGHANIM327/events-organization"
     },
     {
         id: 2,
-        image: '/projects/clothing-ecommerce.JPG',
+        images: ['/projects/clothing-ecommerce.JPG'],
         name: 'Clothing Ecommerce',
         short_description:'Clothing Ecommerce web development project I created using React, Material-UI, and Sass...',
         description: [
@@ -96,11 +96,33 @@ export const projects: Project[] = [
             the latest web technologies to deliver a compelling shopping experience for customers.`
         ],
         tools: ["React","Redux","Material-UI","Sass","Firebase","GraphQL","Stripe"],
-        preview : "https://clothing-ecommerce-gold.vercel.app/",
+        preview : "",
         code : "https://github.com/ahmedGHANIM327/Clothing-Ecommerce"
+    },
+    {
+        id: 3,
+        images: [
+            '/projects/real-estate-app/real-estate-app.png'
+        ],
+        name: 'Real Estate App',
+        short_description:'This Real Estate mobile application is designed to simplify the management and discovery of real estate listings...',
+        description: [
+            `This Real Estate mobile application is designed to simplify the management and discovery of real estate listings. 
+            Built with React Native and powered by Appwrite, it offers a seamless and secure experience for both property owners 
+            and potential buyers or renters. Users can effortlessly create, manage, and browse property announcements while 
+            benefiting from a modern and intuitive interface styled with Tailwind CSS.`,
+            `Authentication is streamlined through Google Auth, ensuring secure and quick access to the platform. With Appwrite 
+            handling backend services, the app provides efficient data management, real-time updates, and a smooth user experience. 
+            Whether you're looking to list a property or find your next home, this app delivers a fast, reliable, and user-friendly 
+            solution for the real estate market.`
+        ],
+        tools: ["React Native","Appwriter", "Google Auth", "TailwindCSS"],
+        preview : "",
+        code : "https://github.com/ahmedGHANIM327/real-estate-mobile-app"
     }
 ]
 
-// 4. Smart Brain
-// 5. Artisan7
-
+// 1. Shifaelib
+// 2. Real estate mobile app
+// 3. Evently
+// 4. Clothing Ecommerce

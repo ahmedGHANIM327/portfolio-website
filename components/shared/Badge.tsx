@@ -13,7 +13,7 @@ const Badge:FC<{cointainerStyles:string,
         <div className="xl:text-3xl text-xl text-primary">{icon}</div>
         <div className="flex gap-x-2 items-center">
             <div className="xl:text-4xl text-2xl leading-none font-bold text-primary">
-                <CountUp end={endCountNum} delay={1} duration={2}/>
+                +<CountUp end={endCountNum} delay={1} duration={2}/>
                 {endCountText}
             </div>
             <div className="leading-none xl:max-w-[200px] text-black text-[15px] font-medium">

@@ -22,7 +22,7 @@ const Experience:FC<{experience: ExperienceType}> = ({experience}) => {
             <div>
                 <h6 className='text-md font-semibold'>Missions :</h6>
                 {experience.description.map((desc: string) => (
-                    <p key={desc} className='text-sm text-justify items-center flex mb-2 text-muted-foreground ml-2'>{desc}</p>
+                    <p key={desc} className='text-sm text-justify items-center flex mb-2 text-muted-foreground ml-2'>. {desc}</p>
                 ))}
             </div>
             <div className='flex gap-x-2 flex-wrap gap-y-2 mt-4'>

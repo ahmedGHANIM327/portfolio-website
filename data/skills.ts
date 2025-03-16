@@ -54,11 +54,6 @@ const skills =
         "id":10,
         "image":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg",
         "title":"ExpressJS"
-    },
-    {
-        "id":11,
-        "image":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg",
-        "title":"Vite"
     }
 ]
 

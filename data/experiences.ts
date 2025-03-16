@@ -25,7 +25,9 @@ export const experiences: Experience[] =
             "Implemented continuous integration and continuous deployment (CI/CD) pipelines using Docker, GitHub Actions, and Drone, automating the deployment process and ensuring code quality and consistency.",
             "Actively engaged in DevOps tasks, including container management with Portainer, monitoring application performance, and troubleshooting issues to ensure seamless operation in production environments.",
             "Code quality monitoring with SonarQube",
-            "Monitor test and production environments with NewRelic"
+            "Monitor test and production environments with NewRelic",
+            "Automated SDK generation from OpenAPI to facilitate integration with other services.",
+            "Creation and implementation of a Design System to ensure visual consistency and enhance user experience across applications."
         ],
         "skills":[
             "NodeJS","React","NextJS","NestJS","ExpressJS","MongoDB","PostgreSQL","GraphQL","RabbitMQ","Docker"

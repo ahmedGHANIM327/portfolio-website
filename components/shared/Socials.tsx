@@ -11,7 +11,7 @@ const socialIcons = [
         name: <RiLinkedinFill />
     },
     {
-        path: 'mailto:email@example.com',
+        path: 'mailto:ahmedghanim902@gmail.com',
         name: <RiMailFill />
     }
 ]

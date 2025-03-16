@@ -12,10 +12,6 @@ const contactInfos = [
     {
         name: <RiMap2Fill />,
         text: 'Lyon, France'
-    },
-    {
-        name: <RiCalendar2Fill />,
-        text: 'April - 1999'
     }
 ]
 
